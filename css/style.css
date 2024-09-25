@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,57 +15,56 @@ body {
 
 .wrapper {
     display: flex;
-    height: 100%;
     align-items: center;
+    height: 100%;
 }
 
 .slide-wrapper {
     display: flex;
-    width: 100%;
-    flex-direction: column;
     justify-content: center;
-    overflow: hidden; /* não mostra os elementos que estão transbordando dentro da tag pai */
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
 }
 
 .slide-list {
     display: flex;
-    flex-direction: row;
 }
 
 .slide-item {
-    width: 90vw;
+    cursor: grab;
     flex-shrink: 0;
     padding: 0 10px;
-    cursor: grab;
-    box-shadow: #070707 0px 10px 12px;
+    width: 90vw;
 }
 
 .slide-content {
-    position: relative;
-    border: #ffffff solid 1px;
     border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: #070707 0px 12px 12px;
+    position: relative;
 }
 
-.slide-img {
-    width: 100%;
+.slide-image {
     border-radius: 10px;
+    width: 100%;
 }
 
 .slide-description {
-    background: linear-gradient(to top, #000, transparent);
-    color: #ffffff;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    padding: 30px;
     border-radius: 10px;
+    background: linear-gradient(to top, #000, transparent);
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
 }
 
 .slide-description h3 {
-    position: relative;
     font-family: 'Koulen', sans-serif;
     font-size: 48px;
-    top: 16px;
+    position: relative;
+    top: 16px
 }
 
 .slide-description p {
@@ -74,11 +73,11 @@ body {
 }
 
 .slide-nav-button {
-    position: absolute;
-    color: #ffffff;
     background: transparent;
-    font-size: 36px;
+    color: #fff;
     cursor: pointer;
+    font-size: 36px;
+    position: absolute;
     z-index: 1;
 }
 
@@ -95,31 +94,42 @@ body {
 }
 
 .slide-control-button {
-    background: transparent;
-    color: #ffffff;
-    font-size: 18px;
-    margin: 0 3px;
+    color: #fff;
     cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    margin: 0 5px;
 }
 
 .slide-control-button.active {
     color: #cd8cf5;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-   
     .slide-description {
         padding: 10px;
     }
-
-    .slide-description h3{
+    
+    .slide-description h3 {
         font-size: 24px;
-        margin-left: 20px;
+        top: 0;
     }
 
     .slide-description p {
         display: none;
+    }
+
+    .slide-nav-button {
+        margin-top: -20px;
+        font-size: 28px;
+    }
+    
+    .slide-nav-previous {
+        left: 10px;
+    }
+    
+    .slide-nav-next {
+        right: 10px;
     }
 
     .slide-controls {
@@ -128,10 +138,5 @@ body {
 
     .slide-control-button {
         font-size: 14px;
-    }
-
-    .slide-nav-button {
-        font-size: 38px;
-        margin-top: -50px;
     }
 }

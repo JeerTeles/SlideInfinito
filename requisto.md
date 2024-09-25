@@ -1,1 +1,1 @@
-Parei no 58:00
+Parei no 1:55:00

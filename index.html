@@ -12,94 +12,96 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="slide-wrapper">
-            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left"></button>
-            <button class="slide-nav-button slide-nav-next fas fa-chevron-right"></button>
-            <div class="slide-list">
-                <div class="slide-item">
+        <div class="slide-wrapper" data-slide="wrapper">
+            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+            <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+            <div class="slide-list" data-slide="list">
+                <div class="slide-item" data-slide="item" data-index="0">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/assassinscreed.png" alt="assassin's creed">
+                        <img class="slide-image" src="img/assassinscreed.png" alt="Assassin's Creed" />
                         <div class="slide-description">
                             <h3>Assassin's Creed</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="1">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/fortnite.png" alt="fortnite">
+                        <img class="slide-image" src="img/fortnite.png" alt="Fortnite" />
                         <div class="slide-description">
                             <h3>Fortnite</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="2">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/freefire.png" alt="freefire">
+                        <img class="slide-image" src="img/freefire.png" alt="Freefire" />
                         <div class="slide-description">
                             <h3>Freefire</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="3">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/gta-v.png" alt="GTA-v">
+                        <img class="slide-image" src="img/gta-v.png" alt="GTA V" />
                         <div class="slide-description">
-                            <h3>GTA-v</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <h3>GTA V</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="4">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/halo5.png" alt="halo5">
+                        <img class="slide-image" src="img/halo5.png" alt="Halo 5" />
                         <div class="slide-description">
-                            <h3>Halo5</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <h3>Halo 5</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="5">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/league-of-legends.png" alt="league-of-legends">
+                        <img class="slide-image" src="img/league-of-legends.png" alt="League of Legends" />
                         <div class="slide-description">
-                            <h3>League-of-legends</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <h3>League of Legends</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="6">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/red-dead-redemption-2.png" alt="red-dead-redemption-2">
+                        <img class="slide-image" src="img/red-dead-redemption-2.png" alt="Red Dead Redemption 2" />
                         <div class="slide-description">
-                            <h3>Red-dead-redemption</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <h3>Red Dead Redemption 2</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide-item">
+                <div class="slide-item" data-slide="item" data-index="7">
                     <div class="slide-content">
-                        <img class="slide-img" src="img/zelda.png" alt="Zelda">
+                        <img class="slide-image" src="img/zelda.png" alt="Zelda" />
                         <div class="slide-description">
                             <h3>Zelda</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slide-controls">
-                <button class="slide-control-button fas fa-circle active"></button>
-                <button class="slide-control-button fas fa-circle"></button>
-                <button class="slide-control-button fas fa-circle"></button>
-                <button class="slide-control-button fas fa-circle"></button>
-                <button class="slide-control-button fas fa-circle"></button>
-                <button class="slide-control-button fas fa-circle"></button>
-                <button class="slide-control-button fas fa-circle"></button>
-                <button class="slide-control-button fas fa-circle"></button>
+            <div class="slide-controls" data-slide="controls-wrapper">
             </div>
         </div>
     </div>
+    <script src="js/Script.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startAtIndex: 0,
+            timeInterval: 2000
+        })
+    </script
+
+    <script src="js/Script.js"></script>
 </body>
 </html>
